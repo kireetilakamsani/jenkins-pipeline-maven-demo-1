@@ -1,4 +1,4 @@
-# groovy file
+
 
 pipeline {
   agent {
