@@ -9,6 +9,7 @@ pipeline {
             stage("using env vars") {
                 steps {
                     sh 'echo BUILD_NUMBER = $BUILD_NUMBER'
+                    sh 'echo JAVA_HOME = $JAVA_HOME'
                 }
             }    
         }
