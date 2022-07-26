@@ -6,5 +6,10 @@ pipeline {
                     sh "printenv | sort"
                 }
             }
+            stage("using env vars") {
+                steps {
+                    sh 'echo BUILD_NUMBER = $BUILD_NUMBER'
+                }
+            }    
         }
 }
